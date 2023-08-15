@@ -1,0 +1,15 @@
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\bin\Debug\net7.0\Persistencia.deps.json
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\bin\Debug\net7.0\Persistencia.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\bin\Debug\net7.0\Persistencia.pdb
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\bin\Debug\net7.0\Dominio.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\bin\Debug\net7.0\Dominio.pdb
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.csproj.AssemblyReference.cache
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.AssemblyInfoInputs.cache
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.AssemblyInfo.cs
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.csproj.CopyComplete
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\refint\Persistencia.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\Persistencia.pdb
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\Persistencia\obj\Debug\net7.0\ref\Persistencia.dll

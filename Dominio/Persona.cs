@@ -8,7 +8,7 @@ public class Persona
     public string  Apellido  { get; set; }
     public int GeneroId { get; set; }
     public Genero Genero { get; set; }
-    public int CiudadId { get; set; }
+    public string CiudadId { get; set; }
     public Ciudad Ciudad { get; set; }
     public int TipoPersonaId   { get; set; }
     public TipoPersona TipoPersona { get; set; }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/IncApi.csproj": {}
+    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj": {}
   },
   "projects": {
-    "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Aplicacion/Aplicacion.csproj": {
+    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Aplicacion/Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Aplicacion/Aplicacion.csproj",
-        "packagesPath": "/home/apolM01-044/.nuget/packages/",
-        "outputPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Aplicacion/obj/",
+        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/apolM01-044/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/Dominio.csproj": {
-                "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/Dominio.csproj"
+              "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj"
               },
-              "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Persistencia/Persistencia.csproj": {
-                "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Persistencia/Persistencia.csproj"
+              "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/Dominio.csproj": {
+    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/Dominio.csproj",
-        "packagesPath": "/home/apolM01-044/.nuget/packages/",
-        "outputPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/obj/",
+        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/apolM01-044/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -127,21 +127,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/IncApi.csproj": {
+    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/IncApi.csproj",
+        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj",
         "projectName": "IncApi",
-        "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/IncApi.csproj",
-        "packagesPath": "/home/apolM01-044/.nuget/packages/",
-        "outputPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/obj/",
+        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj",
+        "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/apolM01-044/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -153,8 +153,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Aplicacion/Aplicacion.csproj": {
-                "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Aplicacion/Aplicacion.csproj"
+              "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }
@@ -170,6 +170,12 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
             },
@@ -197,21 +203,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Persistencia/Persistencia.csproj": {
+    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Persistencia/Persistencia.csproj",
+        "projectUniqueName": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Persistencia/Persistencia.csproj",
-        "packagesPath": "/home/apolM01-044/.nuget/packages/",
-        "outputPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Persistencia/obj/",
+        "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/apolM01-044/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -223,8 +229,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/Dominio.csproj": {
-                "projectPath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/Dominio/Dominio.csproj"
+              "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -264,7 +270,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
