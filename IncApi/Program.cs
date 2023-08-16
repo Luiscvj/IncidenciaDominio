@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<IncidenciaContext>(Options =>
 {
-   string ? ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+   string ? ConnectionString = builder.Configuration.GetConnectionString("DefaultConnectionCampus");
     Options.UseMySql(ConnectionString,ServerVersion.AutoDetect(ConnectionString));
 });
 
