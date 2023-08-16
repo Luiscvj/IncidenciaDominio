@@ -238,10 +238,6 @@ namespace Persistencia.Data.Migrations
                     b.Property<int>("SalonId")
                         .HasColumnType("int");
 
-                    b.Property<string>("TrainerId")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.HasKey("PersonaId", "SalonId");
 
                     b.HasIndex("SalonId");

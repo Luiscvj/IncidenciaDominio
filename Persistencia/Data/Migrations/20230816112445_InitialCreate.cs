@@ -223,11 +223,9 @@ namespace Persistencia.Data.Migrations
                 name: "trainer_salon",
                 columns: table => new
                 {
-                    SalonId = table.Column<int>(type: "int", nullable: false),
                     PersonaId = table.Column<string>(type: "varchar(20)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    TrainerId = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                    SalonId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
