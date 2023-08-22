@@ -4,7 +4,7 @@ namespace Dominio.Interfaces;
 
 public interface IRepositoryGeneric<T>
 {
-    Task<T> GetById(int Id);
+    Task<T> GetById(string Id);
     Task<IEnumerable<T>> GetAll();
     IEnumerable<T> Find(Expression<Func<T,bool>>expression);
     void Add(T Entity);

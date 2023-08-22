@@ -14,5 +14,6 @@ public class MappingProfiles :Profile
         CreateMap<Departamento,DepartamentoDto>().ReverseMap();
         CreateMap<Departamento,DepartamentoPaisDto>().ReverseMap();
         CreateMap<Pais,PaisDto>().ReverseMap();
+        CreateMap<Pais,PaisDepartamentoDto>().ReverseMap();
     }
 }

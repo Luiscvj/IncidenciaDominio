@@ -34,7 +34,7 @@ public class GenericRepository<T> : IRepositoryGeneric<T> where T : class
         return await _context.Set<T>().ToListAsync();
     }
 
-    public virtual async Task<T> GetById(int Id)
+    public virtual async Task<T> GetById(string Id)
     {
         return await _context.Set<T>().FindAsync(Id);
     }
