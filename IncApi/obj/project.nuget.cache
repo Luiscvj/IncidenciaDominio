@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tQ0KodOdcpSsB1xVR8d4zrKlXRAgEYlxLUB3Z1J+EGNBiQirHz974QHuYxv9jibK/X5pkmPhycoW51dXVRztnA==",
+  "dgSpecHash": "wCIOGO3FfTucwr7ICjcXKFuTSq+QWxsDKrhDpI6R+qMJ+TnUuFN1I/sgqihH/7wpAvdcMSN963Tj11WOySVT5A==",
   "success": true,
   "projectFilePath": "/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/IncApi.csproj",
   "expectedPackageFiles": [
+    "/home/apolM01-044/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/apolM01-044/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
@@ -13,6 +15,7 @@
     "/home/apolM01-044/.nuget/packages/itext.pdfhtml/5.0.1/itext.pdfhtml.5.0.1.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/itext7.pdfhtml/5.0.1/itext7.pdfhtml.5.0.1.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/microsoft.aspnetcore.openapi/7.0.10/microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "/home/apolM01-044/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/microsoft.dotnet.platformabstractions/1.1.0/microsoft.dotnet.platformabstractions.1.1.0.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/microsoft.entityframeworkcore/7.0.10/microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "/home/apolM01-044/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.10/microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

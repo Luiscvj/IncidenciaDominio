@@ -11,7 +11,7 @@ public class Persona
     public string CiudadId { get; set; }
     public Ciudad Ciudad { get; set; }
     public int TipoPersonaId   { get; set; }
-    public TipoPersona TipoPersona { get; set; }
+    public List<TipoPersona> TipoPersonas { get; set; }
     public List<Direccion> Direcciones { get; set; }
     public List<Salon> Salones { get; set; }
     public List<TrainerSalon> TrainerSalones { get; set; }

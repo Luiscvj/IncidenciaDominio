@@ -28,9 +28,16 @@ public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
         .WithMany(c => c.Personas)
         .HasForeignKey(p => p.CiudadId);
 
-        builder.HasOne(p => p.TipoPersona)
+        builder.HasMany(p => p.TipoPersonas)
         .WithMany(tp => tp.Personas)
-        .HasForeignKey(p => p.TipoPersonaId);
+        .UsingEntity
+        (
+            j =>
+            {
+                j.ToTable("persona_TipoPersonas");
+               
+            }
+        );
 
 
         builder.HasMany(p => p.Salones)
