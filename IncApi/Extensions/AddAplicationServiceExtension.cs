@@ -2,6 +2,8 @@ using Aplicacion.UnitOfWork;
 using AspNetCoreRateLimit;
 using Dominio.Interfaces;
 using iText.Kernel.XMP.Options;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 namespace IncApi.Extensions;
 
@@ -37,9 +39,24 @@ public static class AddAplicationServiceseExtension
                 {
                     Endpoint = "*",
                     Period = "10s",
-                    Limit =2
+                    Limit =10
                 }
             };
         });
     }
+
+
+    public static void ConfigureApiVersioning(this IServiceCollection services)
+    {
+        services.AddApiVersioning(options =>
+        {
+            options.DefaultApiVersion = new ApiVersion(1, 0);
+            options.AssumeDefaultVersionWhenUnspecified = true;
+            options.ApiVersionReader = ApiVersionReader.Combine(
+                new QueryStringApiVersionReader("ver"),
+                new HeaderApiVersionReader("X-Version")
+            );
+        });
+    }
+    
 }

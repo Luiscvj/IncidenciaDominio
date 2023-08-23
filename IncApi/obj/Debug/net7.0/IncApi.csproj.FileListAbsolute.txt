@@ -132,3 +132,5 @@ C:/Users/luisc/OneDrive/Documentos/Proyectos/IncidenciaDominio/IncApi/bin/Debug/
 /home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/obj/Debug/net7.0/ref/IncApi.dll
 /home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/bin/Debug/net7.0/AutoMapper.dll
 /home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/bin/Debug/net7.0/AspNetCoreRateLimit.dll
+/home/apolM01-044/Luis Carlos/Clase/IncidenciaDominio/IncidenciaDominio/IncApi/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.Versioning.dll

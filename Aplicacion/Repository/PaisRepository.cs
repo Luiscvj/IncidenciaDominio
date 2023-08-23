@@ -15,7 +15,7 @@ public class PaisRepository : GenericRepository<Pais>,IPais
         _context = context;
     } 
 
-     public async Task<Pais> GetByID(string Id)
+     public async Task<Pais> GetByIDpd(string Id)
      {
           return  await  _context.Paises
                     .Include(p =>p.Departamentos)

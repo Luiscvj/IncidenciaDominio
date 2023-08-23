@@ -18,10 +18,11 @@ builder.Services.AddDbContext<IncidenciaContext>(Options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddCors();
+builder.Services.ConfigureRateLimiting();
+builder.Services.ConfigureApiVersioning();
 builder.Services.AddAplicationServices();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-builder.Services.ConfigureRateLimiting();
+builder.Services.AddCors(); 
 
 var app = builder.Build();
 

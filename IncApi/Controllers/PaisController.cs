@@ -2,11 +2,14 @@ using AutoMapper;
 using Dominio;
 using Dominio.Interfaces;
 using IncApi.DTOS;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IncApi.Controllers;
 
-
+[ApiVersion("1.0")]
+[ApiVersion("1.1")]
+[ApiVersion("1.2")]
 public class PaisController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
@@ -71,18 +74,60 @@ public class PaisController : BaseApiController
     }
 
     [HttpGet("GetPais{id}")]
+    [MapToApiVersion("1.0")] 
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<PaisDepartamentoDto>> GetPais(string id)
+
+    public async Task<ActionResult<PaisDto>> GetPais(string id)
+    {
+        if(id == null)
+        {
+            return BadRequest();
+        }
+
+       Pais p =  await      _unitOfWork.Paises.GetById(id);
+       
+
+        return _mapper.Map<PaisDto>(p);
+
+    }
+
+
+
+
+    [HttpGet("GetPaisDepartamentos{id}")]
+       
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+    public async Task<ActionResult<PaisDepartamentoDto>> GetPaisDep(string id)
     {
 
         if(id == null)
         {
             return BadRequest();
         }
-        Pais pais = await _unitOfWork.Paises.GetByID(id);
-       return  _mapper.Map<PaisDepartamentoDto>(pais);
+        Pais pais = await _unitOfWork.Paises.GetByIDpd(id);
+         return _mapper.Map<PaisDepartamentoDto>(pais);
+         ;
 
         
     }
+    
+    [HttpGet("GetAll")]
+  
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+    public async  Task<ActionResult<PaisDto[]>> GetAll()
+    {
+           var paises = _unitOfWork.Paises.GetAll();
+           PaisDto[] p = _mapper.Map<PaisDto[]>(paises);
+
+           return p;
+    }
+
+
+    
 }
+
