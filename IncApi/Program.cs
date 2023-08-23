@@ -1,4 +1,5 @@
 using System.Reflection;
+using AspNetCoreRateLimit;
 using IncApi.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
@@ -20,7 +21,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
 builder.Services.AddAplicationServices();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-
+builder.Services.ConfigureRateLimiting();
 
 var app = builder.Build();
 
@@ -30,6 +31,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseIpRateLimiting();
+
 app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();

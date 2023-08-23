@@ -10,6 +10,5 @@ public class PersonaRepository : GenericRepository<Persona>,IPersona
    
     public PersonaRepository(IncidenciaContext context) : base(context)
     {
-        
-    } 
+    }
 }

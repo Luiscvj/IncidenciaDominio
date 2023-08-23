@@ -1,8 +1,10 @@
+using System.Linq;
 using System.Linq.Expressions;
 using Dominio;
 using Dominio.Interfaces;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using Persistencia;
+using Microsoft.EntityFrameworkCore; 
 namespace Aplicacion.Repository;
 
 public class PaisRepository : GenericRepository<Pais>,IPais
@@ -13,11 +15,10 @@ public class PaisRepository : GenericRepository<Pais>,IPais
         _context = context;
     } 
 
-    public override Task<Pais> GetById(string id)
-    {
-        from pais in _context.Paises
-        where pais.PaisId == id &&
-        select pais
-        
-    }
+     public async Task<Pais> GetByID(string Id)
+     {
+          return  await  _context.Paises
+                    .Include(p =>p.Departamentos)
+                    .FirstOrDefaultAsync(d => d.PaisId == Id);
+     }
 }
