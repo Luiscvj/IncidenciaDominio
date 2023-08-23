@@ -1,3 +1,6 @@
 {
-    "dotnet.defaultSolution": "pruebaApi.sln"
+    "dotnet.defaultSolution": "pruebaApi.sln",
+    "conventionalCommits.scopes": [
+        "Arreglar versionamiento"
+    ]
 }
