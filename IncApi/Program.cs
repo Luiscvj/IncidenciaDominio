@@ -7,8 +7,13 @@ using Persistencia;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//Para cambiarl el formato a las respuestas : XML ,etc.
+builder.Services.AddControllers(options =>
+{
+    options.RespectBrowserAcceptHeader = true;
+    options.ReturnHttpNotAcceptable = true; //Por si se desea devolver un mensjae que diga que el formato exigido no es aceptado
+}).AddXmlSerializerFormatters();
 
-builder.Services.AddControllers();
 builder.Services.AddDbContext<IncidenciaContext>(Options =>
 {
    string ? ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
