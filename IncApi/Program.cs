@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<IncidenciaContext>(Options =>
 {
-   string ? ConnectionString = builder.Configuration.GetConnectionString("DefaultConnectionCampus");
+   string ? ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     Options.UseMySql(ConnectionString,ServerVersion.AutoDetect(ConnectionString));
 });
 

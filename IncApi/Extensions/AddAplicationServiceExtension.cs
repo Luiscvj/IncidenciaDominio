@@ -52,9 +52,11 @@ public static class AddAplicationServiceseExtension
         {
             options.DefaultApiVersion = new ApiVersion(1, 0);
             options.AssumeDefaultVersionWhenUnspecified = true;
+            options.ApiVersionReader = new QueryStringApiVersionReader("ver");
+
             options.ApiVersionReader = ApiVersionReader.Combine(
-                new QueryStringApiVersionReader("ver"),
-                new HeaderApiVersionReader("X-Version")
+                new QueryStringApiVersionReader("ver"),//Codigo que permite usar Query Strings o headres para la esecificacion de la version
+                new HeaderApiVersionReader("X-Version" )
             );
         });
     }

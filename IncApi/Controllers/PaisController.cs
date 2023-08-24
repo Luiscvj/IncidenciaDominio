@@ -7,9 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IncApi.Controllers;
 
+ 
 [ApiVersion("1.0")]
 [ApiVersion("1.1")]
-[ApiVersion("1.2")]
+[ApiVersion("1.2")] 
 public class PaisController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
@@ -73,7 +74,7 @@ public class PaisController : BaseApiController
         return Ok();
     }
 
-    [HttpGet("GetPais{id}")]
+    [HttpGet("{id}")]
     [MapToApiVersion("1.0")] 
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -96,7 +97,7 @@ public class PaisController : BaseApiController
 
 
     [HttpGet("GetPaisDepartamentos{id}")]
-       
+    [MapToApiVersion("1.1")] 
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
@@ -115,16 +116,16 @@ public class PaisController : BaseApiController
     }
     
     [HttpGet("GetAll")]
-  
+    [MapToApiVersion("1.2")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
     public async  Task<ActionResult<PaisDto[]>> GetAll()
     {
-           var paises = _unitOfWork.Paises.GetAll();
+          var paises =  await _unitOfWork.Paises.GetAll();
            PaisDto[] p = _mapper.Map<PaisDto[]>(paises);
 
-           return p;
+           return Ok(p);
     }
 
 
