@@ -2,6 +2,7 @@ using AutoMapper;
 using Dominio;
 using Dominio.Interfaces;
 using IncApi.DTOS;
+using IncApi.Helpers;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -101,16 +102,21 @@ public class PaisController : BaseApiController
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-    public async Task<ActionResult<PaisDepartamentoDto>> GetPaisDep(string id)
+    public async Task<ActionResult<Pager<PaisDepartamentoDto>>> GetPaisDep([FromQuery] Params paisParmas )
     {
 
-        if(id == null)
+      /*   if(id == null)
         {
             return BadRequest();
         }
         Pais pais = await _unitOfWork.Paises.GetByIDpd(id);
          return _mapper.Map<PaisDepartamentoDto>(pais);
-         ;
+         ; */
+
+         var pais = await _unitOfWork.Paises.GetAllAsync(paisParmas.PageIndex,paisParmas.PageSize,paisParmas.Search);
+         var listPaisesDto =_mapper.Map<List<PaisDepartamentoDto>>(pais.registros);
+
+        return new Pager<PaisDepartamentoDto>(listPaisesDto, paisParmas.Search, pais.totalRegistros, paisParmas.PageIndex, paisParmas.PageSize);
 
         
     }

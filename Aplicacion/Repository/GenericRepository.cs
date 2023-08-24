@@ -34,6 +34,17 @@ public class GenericRepository<T> : IRepositoryGeneric<T> where T : class
         return await _context.Set<T>().ToListAsync();
     }
 
+    public async virtual Task<(int totalRegistros, IEnumerable<T> registros)> GetAllAsync(int pageIndex, int pageSize, string search)
+    {
+        var totalRegistros = await _context.Set<T>().CountAsync();
+        var registros = await _context.Set<T>()
+            .Skip((pageIndex -1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+
+            return (totalRegistros, registros);
+    }
+
     public virtual async Task<T> GetById(string Id)
     {
         return await _context.Set<T>().FindAsync(Id);
