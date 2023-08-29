@@ -13,8 +13,10 @@ public interface IUnitOfWork
     ISalon Salones {get;}
     ITipoPersona TipoPersonas {get;}
     ITrainerSalon TrainerSalones {get;}
+    IUsuario Usuarios {get;}
+    IRol Roles {get;}
 
-    
+
 
 
     Task<int> SaveChanges();

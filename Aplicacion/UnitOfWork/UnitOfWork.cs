@@ -25,6 +25,9 @@ public class UnitOfWork : IUnitOfWork,IDisposable
     private SalonRepository _salon;
     private TipoPersonaRepository _tipoPersona;
     private TrainerSalonRepository _trainerSalon;
+    private UsuarioRepository  _usuario;
+    
+    private RolRepository _rol;
 
 
 
@@ -145,6 +148,30 @@ public class UnitOfWork : IUnitOfWork,IDisposable
                 _trainerSalon = new TrainerSalonRepository(_Context);
             }
             return _trainerSalon;
+        }
+    }
+
+    public IUsuario Usuarios
+    {
+        get
+        {
+            if (_usuario == null)
+            {
+                _usuario = new UsuarioRepository(_Context);
+            }
+            return _usuario;
+        }
+    }
+
+    public IRol Roles 
+    {
+        get
+        {
+            if(_rol == null)
+            {
+                _rol = new RolRepository(_Context);
+            }
+            return _rol;
         }
     }
 
