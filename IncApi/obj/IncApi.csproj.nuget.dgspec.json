@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj": {}
+    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj": {
+    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\obj\\",
+        "outputPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj"
+              "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
+                "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj"
+              "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
+    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
+        "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\obj\\",
+        "outputPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -131,14 +131,14 @@
         }
       }
     },
-    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj": {
+    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj",
+        "projectUniqueName": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj",
         "projectName": "IncApi",
-        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj",
+        "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\IncApi.csproj",
         "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\obj\\",
+        "outputPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\IncApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -153,8 +153,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj"
+              "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }
@@ -219,14 +219,14 @@
         }
       }
     },
-    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj": {
+    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj",
+        "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\obj\\",
+        "outputPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -241,8 +241,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj"
+              "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
+                "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj"
               }
             }
           }

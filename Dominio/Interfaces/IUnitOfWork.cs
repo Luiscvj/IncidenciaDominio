@@ -14,6 +14,8 @@ public interface IUnitOfWork
     ITipoPersona TipoPersonas {get;}
     ITrainerSalon TrainerSalones {get;}
 
+    
+
 
     Task<int> SaveChanges();
 }

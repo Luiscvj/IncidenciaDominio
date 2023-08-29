@@ -23,6 +23,9 @@ public class IncidenciaContext : DbContext
     public DbSet<TipoPersona> TipoPersonas { get; set; }
     public DbSet<TrainerSalon> TrainerSalones { get; set; }
     public DbSet<Departamento> Departamentos { get; set; }
+    public DbSet<Usuario> Usuarios  { get; set; }
+    public DbSet<Rol> Roles {get;set;}
+    
 
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
