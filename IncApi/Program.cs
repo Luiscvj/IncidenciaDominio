@@ -1,8 +1,14 @@
 using System.Reflection;
+using System.Text;
 using AspNetCoreRateLimit;
 using IncApi.Extensions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Persistencia;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+/* ooooooooooooooooluis careverga */
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +20,16 @@ builder.Services.AddControllers(options =>
     options.ReturnHttpNotAcceptable = true; //Por si se desea devolver un mensjae que diga que el formato exigido no es aceptado
 }).AddXmlSerializerFormatters();
 
+
+var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context"));
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>{
+    opt.TokenValidationParameters = new TokenValidationParameters{
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = key,
+        ValidateAudience = false,
+        ValidateIssuer = false
+    };
+});
 builder.Services.AddDbContext<IncidenciaContext>(Options =>
 {
    string ? ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");

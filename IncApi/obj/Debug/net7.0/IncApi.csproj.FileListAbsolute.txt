@@ -204,3 +204,13 @@ C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\obj\Debug\
 C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\obj\Debug\net7.0\IncApi.pdb
 c:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\obj\Debug\net7.0\IncApi.genruntimeconfig.cache
 c:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\obj\Debug\net7.0\ref\IncApi.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Seguridad.dll
+C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Seguridad.pdb

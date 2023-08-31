@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {}
+    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\luisc\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\luisc\\OneDrive\\Documentos\\Proyectos\\IncidenciaDominio\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luisc\\AppData\\Roaming\\NuGet\\NuGet.Config"
