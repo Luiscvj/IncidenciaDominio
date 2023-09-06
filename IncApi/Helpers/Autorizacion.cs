@@ -6,7 +6,9 @@ public class Autorizacion
     {
         Administrador,
         Gerente,
-        Empleado
+        Empleado,
+        Trainer,
+        Estudiante
     }
 
     public const Roles rol_predeterminado = Roles.Empleado;

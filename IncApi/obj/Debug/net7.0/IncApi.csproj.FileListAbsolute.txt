@@ -212,5 +212,3 @@ C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\
 C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Seguridad.dll
-C:\Users\luisc\OneDrive\Documentos\Proyectos\IncidenciaDominio\IncApi\bin\Debug\net7.0\Seguridad.pdb

@@ -8,28 +8,20 @@ using Persistencia;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-/* ooooooooooooooooluis careverga */
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //Para cambiarl el formato a las respuestas : XML ,etc.
-builder.Services.AddControllers(options =>
+builder.Services.AddControllers();/* options =>
 {
     options.RespectBrowserAcceptHeader = true;
     options.ReturnHttpNotAcceptable = true; //Por si se desea devolver un mensjae que diga que el formato exigido no es aceptado
-}).AddXmlSerializerFormatters();
+}).AddXmlSerializerFormatters(); */
 
 
-var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context"));
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>{
-    opt.TokenValidationParameters = new TokenValidationParameters{
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = key,
-        ValidateAudience = false,
-        ValidateIssuer = false
-    };
-});
+
 builder.Services.AddDbContext<IncidenciaContext>(Options =>
 {
    string ? ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -42,6 +34,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRateLimiting();
 builder.Services.ConfigureApiVersioning();
 builder.Services.AddAplicationServices();
+builder.Services.AddJwt(builder.Configuration);
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddCors(); 
 
@@ -59,7 +52,10 @@ app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
+
 
 app.MapControllers();
 

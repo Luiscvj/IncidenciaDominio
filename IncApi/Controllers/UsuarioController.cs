@@ -41,7 +41,7 @@ public class UsuarioController : BaseApiController
 
     public async Task<IActionResult> AddRol(AddRolDto model)
     {
-        var result = await _userService.AddRolesAsync(model);
+        var result = await _userService.AddRoleAsync(model);
         return Ok(result);
 
     }

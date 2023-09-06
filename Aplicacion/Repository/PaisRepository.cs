@@ -38,4 +38,6 @@ public class PaisRepository : GenericRepository<Pais>,IPais
                                 .ToListAsync();
         return ( totalRegistros, registros);
      }
+
+     
 }

@@ -16,8 +16,8 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Microsoft.EntityFrameworkCore.Design": "7.0.10",
           "Microsoft.IdentityModel.Tokens": "6.32.2",
-          "Seguridad": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.5.0"
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "System.IdentityModel.Tokens.Jwt": "6.32.2"
         },
         "runtime": {
           "IncApi.dll": {}
@@ -1000,15 +1000,6 @@
         "runtime": {
           "Persistencia.dll": {}
         }
-      },
-      "Seguridad/1.0.0": {
-        "dependencies": {
-          "Aplicacion": "1.0.0",
-          "System.IdentityModel.Tokens.Jwt": "6.32.2"
-        },
-        "runtime": {
-          "Seguridad.dll": {}
-        }
       }
     }
   },
@@ -1806,11 +1797,6 @@
       "sha512": ""
     },
     "Persistencia/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Seguridad/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

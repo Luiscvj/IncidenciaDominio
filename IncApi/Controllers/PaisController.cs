@@ -3,6 +3,7 @@ using Dominio;
 using Dominio.Interfaces;
 using IncApi.DTOS;
 using IncApi.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -77,6 +78,7 @@ public class PaisController : BaseApiController
 
     [HttpGet("{id}")]
     [MapToApiVersion("1.0")] 
+    [Authorize (Roles = "Gerente")]//Esto me da la autorizacion segun mi rol
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
@@ -97,7 +99,7 @@ public class PaisController : BaseApiController
 
 
 
-    [HttpGet("GetPaisDepartamentos{id}")]
+    [HttpGet("GetPaisDepartamentos")]
     [MapToApiVersion("1.1")] 
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -121,19 +123,29 @@ public class PaisController : BaseApiController
         
     }
     
-    [HttpGet("GetAll")]
-    [MapToApiVersion("1.2")]
+    /* [HttpGet("GetAll")]
+    //[MapToApiVersion("1.2")]
+ /*    [Authorize] */
+    /* [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)] */
+
+   /*  public async  Task<IEnumerable<Pais>> GetTodos()
+    {
+          return    await _unitOfWork.Paises.GetAll();
+           //PaisDto[] p = _mapper.Map<PaisDto[]>(paises);
+        
+    } */
+
+    [HttpGet("Todos")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-    public async  Task<ActionResult<PaisDto[]>> GetAll()
+
+    public async Task<IEnumerable<Pais>> GetAlle()
     {
-          var paises =  await _unitOfWork.Paises.GetAll();
-           PaisDto[] p = _mapper.Map<PaisDto[]>(paises);
-
-           return Ok(p);
+            return await _unitOfWork.Paises.GetAll();
     }
-
+ 
 
     
 }

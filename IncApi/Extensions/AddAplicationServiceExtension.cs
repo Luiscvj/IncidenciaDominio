@@ -1,4 +1,4 @@
-using Aplicacion.Contratos;
+
 using Aplicacion.UnitOfWork;
 using AspNetCoreRateLimit;
 using Dominio.Interfaces;
@@ -7,7 +7,7 @@ using iText.Kernel.XMP.Options;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
-using Seguridad.TokenSeguridad;
+
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using IncApi.Helpers;
@@ -29,7 +29,7 @@ public static class AddAplicationServiceseExtension
         services.AddScoped<IUnitOfWork,UnitOfWork>();
         services.AddScoped<IPasswordHasher<Usuario>, PasswordHasher<Usuario>>();
         services.AddScoped<IUserService, UserService>();
-        services.AddScoped<IJwtGenerador,JwtGenerador>();
+    
     }
 
 
@@ -74,8 +74,11 @@ public static class AddAplicationServiceseExtension
 
     public static void AddJwt(this IServiceCollection services, IConfiguration configuration)
     {
-         services.Configure<JWT>(configuration.GetSection("JWT"));
-           services.AddAuthentication(options =>
+        //Configuration from AppSettings
+        services.Configure<JWT>(configuration.GetSection("JWT"));
+
+        //Adding Athentication - JWT
+        services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;

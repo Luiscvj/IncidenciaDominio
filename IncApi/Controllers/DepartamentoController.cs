@@ -2,6 +2,7 @@ using AutoMapper;
 using Dominio;
 using Dominio.Interfaces;
 using IncApi.DTOS;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IncApi.Controllers;
@@ -42,6 +43,7 @@ public class DepartamentoController : BaseApiController
     }
 
     [HttpPost("AddRangeDepartamento")]
+    [Authorize]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
@@ -71,4 +73,36 @@ public class DepartamentoController : BaseApiController
         return Ok();
     }
 
+
+    [HttpGet("GetTodos")]
+    [Authorize]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+
+    public async Task<IEnumerable<Departamento>> GetAlle()
+    {
+        return await _unitOfWork.Departamentos.GetAll();
+    }
+
+
+    [HttpGet("{id}")]
+    [MapToApiVersion("1.0")] 
+    //[Authorize]//Esto me da la autorizacion segun mi rol
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+    public async Task<ActionResult<DepartamentoDto>> GetPais(string id)
+    {
+        if(id == null)
+        {
+            return BadRequest();
+        }
+
+       Departamento p =  await      _unitOfWork.Departamentos.GetById(id);
+       
+
+        return _mapper.Map<DepartamentoDto>(p);
+
+    }
 }
