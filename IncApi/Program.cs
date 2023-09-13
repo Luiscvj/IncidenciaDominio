@@ -28,7 +28,10 @@ builder.Services.AddDbContext<IncidenciaContext>(Options =>
     Options.UseMySql(ConnectionString,ServerVersion.AutoDetect(ConnectionString));
 });
 
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRateLimiting();
@@ -37,7 +40,7 @@ builder.Services.AddAplicationServices();
 builder.Services.AddJwt(builder.Configuration);
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddCors(); 
-
+//builder.Services.AddSingleton(TokenValidationParameters);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

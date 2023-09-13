@@ -43,6 +43,5 @@ public class UsuarioController : BaseApiController
     {
         var result = await _userService.AddRoleAsync(model);
         return Ok(result);
-
     }
 }

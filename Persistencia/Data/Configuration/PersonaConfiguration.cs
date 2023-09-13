@@ -35,7 +35,7 @@ public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
             j =>
             {
                 j.ToTable("persona_TipoPersonas");
-               
+              
             }
         );
 

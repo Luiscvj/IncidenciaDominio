@@ -12,6 +12,9 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using IncApi.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Collections;
+using iText.StyledXmlParser.Jsoup.Parser;
 
 namespace IncApi.Extensions;
 
@@ -29,6 +32,10 @@ public static class AddAplicationServiceseExtension
         services.AddScoped<IUnitOfWork,UnitOfWork>();
         services.AddScoped<IPasswordHasher<Usuario>, PasswordHasher<Usuario>>();
         services.AddScoped<IUserService, UserService>();
+       // services.AddSingleton(TokenValidationParameters)
+
+        
+     
     
     }
 
@@ -73,21 +80,14 @@ public static class AddAplicationServiceseExtension
     }
 
     public static void AddJwt(this IServiceCollection services, IConfiguration configuration)
-    {
+    {   
+        
         //Configuration from AppSettings
         services.Configure<JWT>(configuration.GetSection("JWT"));
+       byte[] key =Encoding.ASCII.GetBytes(configuration.GetSection(key:"JWT:Key").Value);
 
-        //Adding Athentication - JWT
-        services.AddAuthentication(options =>
-        {
-            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        })
-            .AddJwtBearer(o =>
-            {
-                o.RequireHttpsMetadata = false;
-                o.SaveToken = false;
-                o.TokenValidationParameters = new TokenValidationParameters
+
+       var tokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
                     ValidateIssuer = true,
@@ -96,8 +96,22 @@ public static class AddAplicationServiceseExtension
                     ClockSkew = TimeSpan.Zero,
                     ValidIssuer = configuration["JWT:Issuer"],
                     ValidAudience = configuration["JWT:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"]))
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
                 };
+
+
+        services.AddSingleton<TokenValidationParameters>();
+        //Adding Athentication - JWT
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+            .AddJwtBearer(jwt =>
+            {
+                jwt.RequireHttpsMetadata = false;
+                jwt.SaveToken = true;
+                jwt.TokenValidationParameters = tokenValidationParameters;
             });
     }
     
