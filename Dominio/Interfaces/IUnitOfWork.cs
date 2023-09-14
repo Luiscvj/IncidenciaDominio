@@ -15,6 +15,7 @@ public interface IUnitOfWork
     ITrainerSalon TrainerSalones {get;}
     IUsuario Usuarios {get;}
     IRol Roles {get;}
+    IRefreshToken RefreshTokens {get;}
 
 
 

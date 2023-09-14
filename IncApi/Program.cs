@@ -38,6 +38,7 @@ builder.Services.ConfigureRateLimiting();
 builder.Services.ConfigureApiVersioning();
 builder.Services.AddAplicationServices();
 builder.Services.AddJwt(builder.Configuration);
+
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddCors(); 
 //builder.Services.AddSingleton(TokenValidationParameters);

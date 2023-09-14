@@ -232,14 +232,14 @@ public class UserService :IUserService
     private string RandomStringGeneration(int length)
     {
         var random = new Random();
-        var chars = "akljdlkaclcj madceiwicr,cpoacsañcvlmjnvm.poiuytrez,2098e903'00f30m4,cx,.c02'";
+        var chars = "akljdlkaclcjmadceiwicrcpoacsacvlmjnvmpoiuytrez2098e90300f30m4cxc02";
         return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
 
     }
 
     public async Task<DatosUsuarioDto> VerifyAndGenerateToken(TokenRequestDto tokenRequestDto)
     {
-        var jwtTokenHandler = new JwtSecurityTokenHandler();//Nos permite verificar el token
+         var jwtTokenHandler = new JwtSecurityTokenHandler(); ///Nos permite verificar el token
             
           /*   var tokenValidationParameters = new TokenValidationParameters
                 {
@@ -289,8 +289,8 @@ public class UserService :IUserService
 
             //verificamos si el token existe o no en la base de datos
 
-            var storedToken =await  _context.RefreshTokens.FirstOrDefaultAsync(x => x.Token == tokenRequestDto.RefreshToken);
-
+            //var storedToken = await  _context.RefreshTokens.FirstOrDefaultAsync(x => x.Token == tokenRequestDto.RefreshToken);
+            var storedToken = await _unitOfWork.RefreshTokens.FirstOrDefault(tokenRequestDto.RefreshToken);
             if(storedToken == null)
             {
                  return new DatosUsuarioDto

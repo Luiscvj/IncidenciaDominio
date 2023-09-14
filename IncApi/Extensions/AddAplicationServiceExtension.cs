@@ -100,7 +100,7 @@ public static class AddAplicationServiceseExtension
                 };
 
 
-        services.AddSingleton<TokenValidationParameters>();
+        services.AddSingleton<TokenValidationParameters>(tokenValidationParameters);
         //Adding Athentication - JWT
         services.AddAuthentication(options =>
         {

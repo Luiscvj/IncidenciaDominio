@@ -26,7 +26,7 @@ public class UnitOfWork : IUnitOfWork,IDisposable
     private TipoPersonaRepository _tipoPersona;
     private TrainerSalonRepository _trainerSalon;
     private UsuarioRepository  _usuario;
-    
+    private RefreshTokenRepository _refreshToken;
     private RolRepository _rol;
 
 
@@ -174,6 +174,18 @@ public class UnitOfWork : IUnitOfWork,IDisposable
             return _rol;
         }
     }
+
+   public IRefreshToken RefreshTokens
+   {
+       get
+       {
+           if (_refreshToken == null)
+           {
+               _refreshToken = new RefreshTokenRepository(_Context);
+           }
+           return _refreshToken;
+       }
+   }
 
     public async Task<int> SaveChanges()
     {
